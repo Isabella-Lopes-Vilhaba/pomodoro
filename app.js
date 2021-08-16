@@ -14,7 +14,7 @@ function startCounter() {
   if(counterInterval) return;
 
   counterInterval = setInterval( () => {
-    const timeOver = !minutes && !seconds;
+    const timeOver = !seconds && !minutes;
     const secondsOver = !seconds;
 
 // Se minutes e seconds forem 0, ou seja, false
